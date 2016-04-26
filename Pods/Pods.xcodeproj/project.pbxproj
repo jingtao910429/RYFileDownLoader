@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00105874F5466B0781B20D698A105BFD /* MMProgressHUDOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE1AF434A31ED55349D41C2107F1AEFE /* MMProgressHUDOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0ED11AF2D35512C125D30328BC712488 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F7D3D0F159A4AF5B4A490107AECB35 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		180AF31B2A791C5414159A38690692D7 /* MMProgressHUD+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FC072D0ECB09F0ABDDF8AD34BCE289 /* MMProgressHUD+Animations.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1B1D5B8ACCB550967939E2BBB5ED7210 /* MMProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D580ED55AC6499D2C9D76879E8F2286B /* MMProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1DE1A41F26FF071843817BAAFF88CCC4 /* MMVectorImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 80B4469C3977E38A9F86805A6E3FE2EF /* MMVectorImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		210FFD5085C6EFA0B5DEF766BAB3A42F /* MMLinearProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 828ABA61FB08E2BD60FBFE7881E4486B /* MMLinearProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21513C08A7E98B628E6C24770372E1C6 /* MMProgressHUDWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E7FE75384198926330CA423AEDF871 /* MMProgressHUDWindow.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		21CE0492E7E93B2DDC4711B4C245AB11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A280A8FE4B1A7E6CCB0B08D7570BF98C /* Foundation.framework */; };
+		242FCD1AC2981E572692522F6360EE92 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = B36B1BEABD035E815B2C860ADE104F17 /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		34B441125C3E690017F8CEAC068F2295 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 098C438931FFD1D782DB1CF20A364252 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		350DEB8E922600DB16ED4137D0CCBCDD /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 9997C9CC6962C204E1B2CC946F3D8733 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3E2A6EDEB1643768FBD4BE1C88B95CAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737CDE2FA5FB2A7C4B47CBE0C95847AC /* CoreGraphics.framework */; };
+		41C1390FE995D6FF08691E63A724749F /* MMVectorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BADAD7F307BBF3EBC987DF090295F0 /* MMVectorImage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		489A58567B15A08B2A0AB04FA5578883 /* MMProgressHUDViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A3E81211C73D3859610DC9CA2A653F17 /* MMProgressHUDViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5286FDFBE0EF12A8115A6ED56E75440B /* MMHud.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FDA2EE1757E861236297BA98C0AF375 /* MMHud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5854F966243770ABE68057E260CBF12E /* MMLinearProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D2DCD7C6502AECD228356A62417A24 /* MMLinearProgressView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5AE8E78FC9D83780ED611298F138173D /* MMProgressHUDWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = CF270653219F08A77516459BD9365BA6 /* MMProgressHUDWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5AF74863CBD7E03CF8C8BF9FDBEA0898 /* MMProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 3211ACCF32D518AFB73ABD686D17BE6D /* MMProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FCA363EC49A6E88E15B6EEB3F85C3EF /* MMProgressHUDOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = B57DB539B3D5B8A9521EF112EB7488DF /* MMProgressHUDOverlayView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		64031B81FD4023FD5F66F8285206435E /* MMRadialProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D51CF4E6E55DC6EB1A598AF39C18B60A /* MMRadialProgressView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6514185D0334DA230B59EF2F5596F3AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A280A8FE4B1A7E6CCB0B08D7570BF98C /* Foundation.framework */; };
+		77FC0362D17001B34103A92C665CBA01 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = E4C00C773057AA80E6ED67738D2B2652 /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		798E15A7741C64E39D76BC938A188223 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 952E1D1856E74D89F5D89095A757C5BE /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7CAA4EEB2837C8F689C8A159CF2A7B33 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 4559AC4307E30556D1B95914F7FC927D /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		86576B0897085471958EEDA8B785AB87 /* MMProgressView-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0E3A7BE7515711AA7AF86EAF672291 /* MMProgressView-Protocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9032443D8F0DB1F1DBC4C2F279431D1A /* MMProgressHUD+Class.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4570C421398A190A5112B0053E14B8 /* MMProgressHUD+Class.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		91C83C70C8F1E7995A9127DE867B0310 /* MMProgressHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBBB0260B29C73CF63B2DC4061EB76 /* MMProgressHUDViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		92A19605E215F5350BF565F945738C65 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EF43FAD7E94C8AEC4543B2099D8C092 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B8EF024B60155EEAC2D33E6B2BF4BA9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 400CD1E1A52CCEAE4F533302B41D782E /* QuartzCore.framework */; };
+		A7626C0C12A04E2E83C0072EA9793820 /* MMProgressHUD+Animations.h in Headers */ = {isa = PBXBuildFile; fileRef = 025FF5CCE76BBB4FA09319608F557810 /* MMProgressHUD+Animations.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB68A35E0E35BD3A0A12186871CD290F /* MMProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A064C20DB930850AA79C6C69221CB785 /* MMProgressHUD-dummy.m */; };
+		B156DE880EBE96D75F62A8F10470C793 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8117E6F90B07D1B11F10C50246B31B38 /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BDF8743DA49A9453000080FE6B0D9257 /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC3710A241CEF3392BFE56B2A152F7E /* SSZipArchive-dummy.m */; };
+		BF416B58576FD1258C36E2CA02337725 /* MMProgressHUDCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 82CB335F6CF9D8B12A5DF426874225F1 /* MMProgressHUDCommon.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C59059992B9E0D9EBDCDFBB7894F25C7 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 14EC17F02676B15920B421AB76FA7144 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CB37529C70691FA2E57FC5D7F28F337D /* MMHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C359635DE3A1CE2B601FDEBA052AAF5 /* MMHud.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CCAE01AAD414C5D96EF1E80D5A39A920 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 5118E355CF7EEB799A37FCA1814B4D65 /* mztools.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CFD7A92A3C43923D361BB3034C6674C5 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DDD7C98C679048A964482F854F5E57A /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D601420097D32469FC7264337B62E12D /* SSZipArchive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DFDBB5D6D2386219BFDE2303A1F04C3 /* SSZipArchive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7AED1161D0F507E7361A9D7ECED705E /* Pods-RYFileDownLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B26644B29D85D9A7C2AF58C52492AB /* Pods-RYFileDownLoader-dummy.m */; };
+		DD5A05217D58ACC94318844ED19115C0 /* Pods-RYFileDownLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E236ED0A8ECAE9EF303621EDA10573 /* Pods-RYFileDownLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D073D4F0E5F571EEE29307CA306E25 /* MMProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 067D3597740998311C03BD0722219F67 /* MMProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4F0DB2435DC8684D3C7FA88439C6A23 /* MMRadialProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 716EACC013674B16F92BE7EC1BBA5EC8 /* MMRadialProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F81334929AAEE157A82FEAE527BF60BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A280A8FE4B1A7E6CCB0B08D7570BF98C /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52B00F2E3E90802E711EA5911B819768 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F6C934734E9A3C7FA348DA3DCDD348A;
+			remoteInfo = SSZipArchive;
+		};
+		EEDD941CD8D10443EB2BB476D72DB310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DB7AD7AC0F841263D2C85BA412A52A7;
+			remoteInfo = MMProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		025FF5CCE76BBB4FA09319608F557810 /* MMProgressHUD+Animations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MMProgressHUD+Animations.h"; path = "Source/MMProgressHUD+Animations.h"; sourceTree = "<group>"; };
+		02A19DDA45CFF785DD4D87698E69A58D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		067D3597740998311C03BD0722219F67 /* MMProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		06D2DCD7C6502AECD228356A62417A24 /* MMLinearProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMLinearProgressView.m; path = Source/MMLinearProgressView.m; sourceTree = "<group>"; };
+		07E236ED0A8ECAE9EF303621EDA10573 /* Pods-RYFileDownLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RYFileDownLoader-umbrella.h"; sourceTree = "<group>"; };
+		098C438931FFD1D782DB1CF20A364252 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
+		09FC072D0ECB09F0ABDDF8AD34BCE289 /* MMProgressHUD+Animations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MMProgressHUD+Animations.m"; path = "Source/MMProgressHUD+Animations.m"; sourceTree = "<group>"; };
+		0F1B9045FAEBCBEA468F8449BF53379D /* Pods-RYFileDownLoader-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RYFileDownLoader-frameworks.sh"; sourceTree = "<group>"; };
+		12EBBB0260B29C73CF63B2DC4061EB76 /* MMProgressHUDViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMProgressHUDViewController.m; path = Source/MMProgressHUDViewController.m; sourceTree = "<group>"; };
+		14EC17F02676B15920B421AB76FA7144 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
+		29B0370E159F403BC582D87645EB6A7C /* Pods-RYFileDownLoader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYFileDownLoader.debug.xcconfig"; sourceTree = "<group>"; };
+		3211ACCF32D518AFB73ABD686D17BE6D /* MMProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMProgressHUD.h; path = Source/MMProgressHUD.h; sourceTree = "<group>"; };
+		3EF43FAD7E94C8AEC4543B2099D8C092 /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		3FDA2EE1757E861236297BA98C0AF375 /* MMHud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMHud.h; path = Source/MMHud.h; sourceTree = "<group>"; };
+		400CD1E1A52CCEAE4F533302B41D782E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		4559AC4307E30556D1B95914F7FC927D /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
+		4DDD7C98C679048A964482F854F5E57A /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
+		50991447A439AA5F82A58FA89050F6EA /* SSZipArchive-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SSZipArchive-Private.xcconfig"; sourceTree = "<group>"; };
+		5118E355CF7EEB799A37FCA1814B4D65 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = SSZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
+		53B26644B29D85D9A7C2AF58C52492AB /* Pods-RYFileDownLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RYFileDownLoader-dummy.m"; sourceTree = "<group>"; };
+		58E7FE75384198926330CA423AEDF871 /* MMProgressHUDWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMProgressHUDWindow.m; path = Source/MMProgressHUDWindow.m; sourceTree = "<group>"; };
+		68240DAA0BF2CFC54627136B132342A9 /* MMProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMProgressHUD.xcconfig; sourceTree = "<group>"; };
+		6E549AE08EE0CA52FA2208BBFFE7A2C5 /* Pods-RYFileDownLoader-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RYFileDownLoader-acknowledgements.plist"; sourceTree = "<group>"; };
+		716EACC013674B16F92BE7EC1BBA5EC8 /* MMRadialProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMRadialProgressView.h; path = Source/MMRadialProgressView.h; sourceTree = "<group>"; };
+		737CDE2FA5FB2A7C4B47CBE0C95847AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		7DFDBB5D6D2386219BFDE2303A1F04C3 /* SSZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-umbrella.h"; sourceTree = "<group>"; };
+		80B4469C3977E38A9F86805A6E3FE2EF /* MMVectorImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMVectorImage.h; path = Source/MMVectorImage.h; sourceTree = "<group>"; };
+		8117E6F90B07D1B11F10C50246B31B38 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		828ABA61FB08E2BD60FBFE7881E4486B /* MMLinearProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMLinearProgressView.h; path = Source/MMLinearProgressView.h; sourceTree = "<group>"; };
+		82CB335F6CF9D8B12A5DF426874225F1 /* MMProgressHUDCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMProgressHUDCommon.h; path = Source/MMProgressHUDCommon.h; sourceTree = "<group>"; };
+		84799EEC8F665856C059A9DDED5C5B75 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87D8598ED94E7E4AA62D2D11FC873BE6 /* Pods-RYFileDownLoader-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RYFileDownLoader-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C592ABFE7B6DD30C21ADF5619C12872 /* Pods-RYFileDownLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RYFileDownLoader.modulemap"; sourceTree = "<group>"; };
+		952E1D1856E74D89F5D89095A757C5BE /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		9997C9CC6962C204E1B2CC946F3D8733 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
+		9B5C31FC0833648C2613ADB60B47C9C2 /* MMProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		9C359635DE3A1CE2B601FDEBA052AAF5 /* MMHud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMHud.m; path = Source/MMHud.m; sourceTree = "<group>"; };
+		9D25C730C58A560CA146327B3B958D6A /* MMProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MMProgressHUD.modulemap; sourceTree = "<group>"; };
+		9FC3710A241CEF3392BFE56B2A152F7E /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
+		A064C20DB930850AA79C6C69221CB785 /* MMProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		A14187712151E7EC869E8F0D85D84EC0 /* SSZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A19EB0F5D1B50ED383D292F66CACD867 /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		A280A8FE4B1A7E6CCB0B08D7570BF98C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A3E81211C73D3859610DC9CA2A653F17 /* MMProgressHUDViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMProgressHUDViewController.h; path = Source/MMProgressHUDViewController.h; sourceTree = "<group>"; };
+		AD308E45FAE9A0C887359B9B83CC0CF7 /* Pods-RYFileDownLoader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYFileDownLoader.release.xcconfig"; sourceTree = "<group>"; };
+		B36B1BEABD035E815B2C860ADE104F17 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = SSZipArchive/minizip/mztools.h; sourceTree = "<group>"; };
+		B57DB539B3D5B8A9521EF112EB7488DF /* MMProgressHUDOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMProgressHUDOverlayView.m; path = Source/MMProgressHUDOverlayView.m; sourceTree = "<group>"; };
+		B78F82E72FBEE334150930679D43E959 /* Pods_RYFileDownLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RYFileDownLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE7EF37D62E8BE4266E3AC66C278F33 /* MMProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1AF434A31ED55349D41C2107F1AEFE /* MMProgressHUDOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMProgressHUDOverlayView.h; path = Source/MMProgressHUDOverlayView.h; sourceTree = "<group>"; };
+		C7BADAD7F307BBF3EBC987DF090295F0 /* MMVectorImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMVectorImage.m; path = Source/MMVectorImage.m; sourceTree = "<group>"; };
+		C88113A79685B4EFEE7BAD12896829F7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CF270653219F08A77516459BD9365BA6 /* MMProgressHUDWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMProgressHUDWindow.h; path = Source/MMProgressHUDWindow.h; sourceTree = "<group>"; };
+		CF4570C421398A190A5112B0053E14B8 /* MMProgressHUD+Class.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MMProgressHUD+Class.m"; path = "Source/MMProgressHUD+Class.m"; sourceTree = "<group>"; };
+		D51CF4E6E55DC6EB1A598AF39C18B60A /* MMRadialProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMRadialProgressView.m; path = Source/MMRadialProgressView.m; sourceTree = "<group>"; };
+		D580ED55AC6499D2C9D76879E8F2286B /* MMProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMProgressHUD.m; path = Source/MMProgressHUD.m; sourceTree = "<group>"; };
+		D6F7D3D0F159A4AF5B4A490107AECB35 /* Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Common.h; path = SSZipArchive/Common.h; sourceTree = "<group>"; };
+		D97428333AAFDEC54309E516D77FA4E5 /* Pods-RYFileDownLoader-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RYFileDownLoader-resources.sh"; sourceTree = "<group>"; };
+		DB6D7696CC8CF1373E3AB7E5075D6E6F /* SSZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SSZipArchive.modulemap; sourceTree = "<group>"; };
+		E3048F44917E3C64997E6DC5D16E6705 /* MMProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MMProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
+		E4C00C773057AA80E6ED67738D2B2652 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
+		E977FB9819769984774AA34D5077ACCD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC0E3A7BE7515711AA7AF86EAF672291 /* MMProgressView-Protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MMProgressView-Protocol.h"; path = "Source/MMProgressView-Protocol.h"; sourceTree = "<group>"; };
+		F4FC95083FF8F4CC7B470DD538E1BC5B /* SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A77DFCF4A5AE434AAD419B3F2AED521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21CE0492E7E93B2DDC4711B4C245AB11 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68AAEE9985777D9E320B849CCAC40903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F81334929AAEE157A82FEAE527BF60BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBB0649C4429B577276FF0D09B48E6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E2A6EDEB1643768FBD4BE1C88B95CAC /* CoreGraphics.framework in Frameworks */,
+				6514185D0334DA230B59EF2F5596F3AA /* Foundation.framework in Frameworks */,
+				9B8EF024B60155EEAC2D33E6B2BF4BA9 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B228D06380FA5C223AB757F4B98EC3D /* MMProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3FDA2EE1757E861236297BA98C0AF375 /* MMHud.h */,
+				9C359635DE3A1CE2B601FDEBA052AAF5 /* MMHud.m */,
+				828ABA61FB08E2BD60FBFE7881E4486B /* MMLinearProgressView.h */,
+				06D2DCD7C6502AECD228356A62417A24 /* MMLinearProgressView.m */,
+				3211ACCF32D518AFB73ABD686D17BE6D /* MMProgressHUD.h */,
+				D580ED55AC6499D2C9D76879E8F2286B /* MMProgressHUD.m */,
+				025FF5CCE76BBB4FA09319608F557810 /* MMProgressHUD+Animations.h */,
+				09FC072D0ECB09F0ABDDF8AD34BCE289 /* MMProgressHUD+Animations.m */,
+				CF4570C421398A190A5112B0053E14B8 /* MMProgressHUD+Class.m */,
+				82CB335F6CF9D8B12A5DF426874225F1 /* MMProgressHUDCommon.h */,
+				BE1AF434A31ED55349D41C2107F1AEFE /* MMProgressHUDOverlayView.h */,
+				B57DB539B3D5B8A9521EF112EB7488DF /* MMProgressHUDOverlayView.m */,
+				A3E81211C73D3859610DC9CA2A653F17 /* MMProgressHUDViewController.h */,
+				12EBBB0260B29C73CF63B2DC4061EB76 /* MMProgressHUDViewController.m */,
+				CF270653219F08A77516459BD9365BA6 /* MMProgressHUDWindow.h */,
+				58E7FE75384198926330CA423AEDF871 /* MMProgressHUDWindow.m */,
+				EC0E3A7BE7515711AA7AF86EAF672291 /* MMProgressView-Protocol.h */,
+				716EACC013674B16F92BE7EC1BBA5EC8 /* MMRadialProgressView.h */,
+				D51CF4E6E55DC6EB1A598AF39C18B60A /* MMRadialProgressView.m */,
+				80B4469C3977E38A9F86805A6E3FE2EF /* MMVectorImage.h */,
+				C7BADAD7F307BBF3EBC987DF090295F0 /* MMVectorImage.m */,
+				94A7791C2060C3135EADE3F5A5E39923 /* Support Files */,
+			);
+			path = MMProgressHUD;
+			sourceTree = "<group>";
+		};
+		2F414954F87ED957BE121A1660094A49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B228D06380FA5C223AB757F4B98EC3D /* MMProgressHUD */,
+				F00612A19EF8EF9B19728B2FC6C6EE55 /* SSZipArchive */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		47FBDD26412A28D4687481B80BDE3A34 /* Pods-RYFileDownLoader */ = {
+			isa = PBXGroup;
+			children = (
+				E977FB9819769984774AA34D5077ACCD /* Info.plist */,
+				8C592ABFE7B6DD30C21ADF5619C12872 /* Pods-RYFileDownLoader.modulemap */,
+				87D8598ED94E7E4AA62D2D11FC873BE6 /* Pods-RYFileDownLoader-acknowledgements.markdown */,
+				6E549AE08EE0CA52FA2208BBFFE7A2C5 /* Pods-RYFileDownLoader-acknowledgements.plist */,
+				53B26644B29D85D9A7C2AF58C52492AB /* Pods-RYFileDownLoader-dummy.m */,
+				0F1B9045FAEBCBEA468F8449BF53379D /* Pods-RYFileDownLoader-frameworks.sh */,
+				D97428333AAFDEC54309E516D77FA4E5 /* Pods-RYFileDownLoader-resources.sh */,
+				07E236ED0A8ECAE9EF303621EDA10573 /* Pods-RYFileDownLoader-umbrella.h */,
+				29B0370E159F403BC582D87645EB6A7C /* Pods-RYFileDownLoader.debug.xcconfig */,
+				AD308E45FAE9A0C887359B9B83CC0CF7 /* Pods-RYFileDownLoader.release.xcconfig */,
+			);
+			name = "Pods-RYFileDownLoader";
+			path = "Target Support Files/Pods-RYFileDownLoader";
+			sourceTree = "<group>";
+		};
+		5E1F3384B1B39575144FEBFCF3210CCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE3C420F843D28CC19CB40DCE9D7D8D1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				C88113A79685B4EFEE7BAD12896829F7 /* Podfile */,
+				5E1F3384B1B39575144FEBFCF3210CCC /* Frameworks */,
+				2F414954F87ED957BE121A1660094A49 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				848A6CE8DA3504A266A17F635DC3683A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		848A6CE8DA3504A266A17F635DC3683A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				47FBDD26412A28D4687481B80BDE3A34 /* Pods-RYFileDownLoader */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		90B3F3C493A68BDC8756EDED1E44CB9E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				84799EEC8F665856C059A9DDED5C5B75 /* Info.plist */,
+				DB6D7696CC8CF1373E3AB7E5075D6E6F /* SSZipArchive.modulemap */,
+				F4FC95083FF8F4CC7B470DD538E1BC5B /* SSZipArchive.xcconfig */,
+				50991447A439AA5F82A58FA89050F6EA /* SSZipArchive-Private.xcconfig */,
+				9FC3710A241CEF3392BFE56B2A152F7E /* SSZipArchive-dummy.m */,
+				A19EB0F5D1B50ED383D292F66CACD867 /* SSZipArchive-prefix.pch */,
+				7DFDBB5D6D2386219BFDE2303A1F04C3 /* SSZipArchive-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SSZipArchive";
+			sourceTree = "<group>";
+		};
+		94A7791C2060C3135EADE3F5A5E39923 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				02A19DDA45CFF785DD4D87698E69A58D /* Info.plist */,
+				9D25C730C58A560CA146327B3B958D6A /* MMProgressHUD.modulemap */,
+				68240DAA0BF2CFC54627136B132342A9 /* MMProgressHUD.xcconfig */,
+				E3048F44917E3C64997E6DC5D16E6705 /* MMProgressHUD-Private.xcconfig */,
+				A064C20DB930850AA79C6C69221CB785 /* MMProgressHUD-dummy.m */,
+				9B5C31FC0833648C2613ADB60B47C9C2 /* MMProgressHUD-prefix.pch */,
+				067D3597740998311C03BD0722219F67 /* MMProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MMProgressHUD";
+			sourceTree = "<group>";
+		};
+		AE3C420F843D28CC19CB40DCE9D7D8D1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				737CDE2FA5FB2A7C4B47CBE0C95847AC /* CoreGraphics.framework */,
+				A280A8FE4B1A7E6CCB0B08D7570BF98C /* Foundation.framework */,
+				400CD1E1A52CCEAE4F533302B41D782E /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAE7EF37D62E8BE4266E3AC66C278F33 /* MMProgressHUD.framework */,
+				B78F82E72FBEE334150930679D43E959 /* Pods_RYFileDownLoader.framework */,
+				A14187712151E7EC869E8F0D85D84EC0 /* SSZipArchive.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F00612A19EF8EF9B19728B2FC6C6EE55 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				D6F7D3D0F159A4AF5B4A490107AECB35 /* Common.h */,
+				3EF43FAD7E94C8AEC4543B2099D8C092 /* SSZipArchive.h */,
+				952E1D1856E74D89F5D89095A757C5BE /* SSZipArchive.m */,
+				14EC17F02676B15920B421AB76FA7144 /* crypt.h */,
+				4559AC4307E30556D1B95914F7FC927D /* ioapi.c */,
+				098C438931FFD1D782DB1CF20A364252 /* ioapi.h */,
+				5118E355CF7EEB799A37FCA1814B4D65 /* mztools.c */,
+				B36B1BEABD035E815B2C860ADE104F17 /* mztools.h */,
+				E4C00C773057AA80E6ED67738D2B2652 /* unzip.c */,
+				9997C9CC6962C204E1B2CC946F3D8733 /* unzip.h */,
+				8117E6F90B07D1B11F10C50246B31B38 /* zip.c */,
+				4DDD7C98C679048A964482F854F5E57A /* zip.h */,
+				90B3F3C493A68BDC8756EDED1E44CB9E /* Support Files */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		041FDFE9F836D6CCE7290E4DCD707457 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5A05217D58ACC94318844ED19115C0 /* Pods-RYFileDownLoader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2877DE5D819403E11E6AFF5149D24F05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5286FDFBE0EF12A8115A6ED56E75440B /* MMHud.h in Headers */,
+				210FFD5085C6EFA0B5DEF766BAB3A42F /* MMLinearProgressView.h in Headers */,
+				A7626C0C12A04E2E83C0072EA9793820 /* MMProgressHUD+Animations.h in Headers */,
+				E4D073D4F0E5F571EEE29307CA306E25 /* MMProgressHUD-umbrella.h in Headers */,
+				5AF74863CBD7E03CF8C8BF9FDBEA0898 /* MMProgressHUD.h in Headers */,
+				BF416B58576FD1258C36E2CA02337725 /* MMProgressHUDCommon.h in Headers */,
+				00105874F5466B0781B20D698A105BFD /* MMProgressHUDOverlayView.h in Headers */,
+				489A58567B15A08B2A0AB04FA5578883 /* MMProgressHUDViewController.h in Headers */,
+				5AE8E78FC9D83780ED611298F138173D /* MMProgressHUDWindow.h in Headers */,
+				86576B0897085471958EEDA8B785AB87 /* MMProgressView-Protocol.h in Headers */,
+				E4F0DB2435DC8684D3C7FA88439C6A23 /* MMRadialProgressView.h in Headers */,
+				1DE1A41F26FF071843817BAAFF88CCC4 /* MMVectorImage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E6A1423EE26AFBF5D82401B4AD476C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED11AF2D35512C125D30328BC712488 /* Common.h in Headers */,
+				D601420097D32469FC7264337B62E12D /* SSZipArchive-umbrella.h in Headers */,
+				92A19605E215F5350BF565F945738C65 /* SSZipArchive.h in Headers */,
+				C59059992B9E0D9EBDCDFBB7894F25C7 /* crypt.h in Headers */,
+				34B441125C3E690017F8CEAC068F2295 /* ioapi.h in Headers */,
+				242FCD1AC2981E572692522F6360EE92 /* mztools.h in Headers */,
+				350DEB8E922600DB16ED4137D0CCBCDD /* unzip.h in Headers */,
+				CFD7A92A3C43923D361BB3034C6674C5 /* zip.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5789833E054CF4AE1E66AEE01356B602 /* Pods-RYFileDownLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8313AE90AAB4E0D5259BF5DA4E781C36 /* Build configuration list for PBXNativeTarget "Pods-RYFileDownLoader" */;
+			buildPhases = (
+				570D2C29F42DE7BB01050998A334E425 /* Sources */,
+				68AAEE9985777D9E320B849CCAC40903 /* Frameworks */,
+				041FDFE9F836D6CCE7290E4DCD707457 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				191275344D9D7845D4FB890B50383061 /* PBXTargetDependency */,
+				D9614257C9B4DC50F32C946DE8EE0E88 /* PBXTargetDependency */,
+			);
+			name = "Pods-RYFileDownLoader";
+			productName = "Pods-RYFileDownLoader";
+			productReference = B78F82E72FBEE334150930679D43E959 /* Pods_RYFileDownLoader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5F6C934734E9A3C7FA348DA3DCDD348A /* SSZipArchive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E8DA3FDD8DB764094AAD4915B15283C /* Build configuration list for PBXNativeTarget "SSZipArchive" */;
+			buildPhases = (
+				E418F01689FA4CFA6DEA5F12970E4207 /* Sources */,
+				0A77DFCF4A5AE434AAD419B3F2AED521 /* Frameworks */,
+				E1E6A1423EE26AFBF5D82401B4AD476C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSZipArchive;
+			productName = SSZipArchive;
+			productReference = A14187712151E7EC869E8F0D85D84EC0 /* SSZipArchive.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7DB7AD7AC0F841263D2C85BA412A52A7 /* MMProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418E28A3A3C52CBD2C33D268DCBC8085 /* Build configuration list for PBXNativeTarget "MMProgressHUD" */;
+			buildPhases = (
+				4E9B60971F83593C987C7D9C4E9AEA1D /* Sources */,
+				EDBB0649C4429B577276FF0D09B48E6A /* Frameworks */,
+				2877DE5D819403E11E6AFF5149D24F05 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMProgressHUD;
+			productName = MMProgressHUD;
+			productReference = BAE7EF37D62E8BE4266E3AC66C278F33 /* MMProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DB7AD7AC0F841263D2C85BA412A52A7 /* MMProgressHUD */,
+				5789833E054CF4AE1E66AEE01356B602 /* Pods-RYFileDownLoader */,
+				5F6C934734E9A3C7FA348DA3DCDD348A /* SSZipArchive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E9B60971F83593C987C7D9C4E9AEA1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB37529C70691FA2E57FC5D7F28F337D /* MMHud.m in Sources */,
+				5854F966243770ABE68057E260CBF12E /* MMLinearProgressView.m in Sources */,
+				180AF31B2A791C5414159A38690692D7 /* MMProgressHUD+Animations.m in Sources */,
+				9032443D8F0DB1F1DBC4C2F279431D1A /* MMProgressHUD+Class.m in Sources */,
+				AB68A35E0E35BD3A0A12186871CD290F /* MMProgressHUD-dummy.m in Sources */,
+				1B1D5B8ACCB550967939E2BBB5ED7210 /* MMProgressHUD.m in Sources */,
+				5FCA363EC49A6E88E15B6EEB3F85C3EF /* MMProgressHUDOverlayView.m in Sources */,
+				91C83C70C8F1E7995A9127DE867B0310 /* MMProgressHUDViewController.m in Sources */,
+				21513C08A7E98B628E6C24770372E1C6 /* MMProgressHUDWindow.m in Sources */,
+				64031B81FD4023FD5F66F8285206435E /* MMRadialProgressView.m in Sources */,
+				41C1390FE995D6FF08691E63A724749F /* MMVectorImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570D2C29F42DE7BB01050998A334E425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7AED1161D0F507E7361A9D7ECED705E /* Pods-RYFileDownLoader-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E418F01689FA4CFA6DEA5F12970E4207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF8743DA49A9453000080FE6B0D9257 /* SSZipArchive-dummy.m in Sources */,
+				798E15A7741C64E39D76BC938A188223 /* SSZipArchive.m in Sources */,
+				7CAA4EEB2837C8F689C8A159CF2A7B33 /* ioapi.c in Sources */,
+				CCAE01AAD414C5D96EF1E80D5A39A920 /* mztools.c in Sources */,
+				77FC0362D17001B34103A92C665CBA01 /* unzip.c in Sources */,
+				B156DE880EBE96D75F62A8F10470C793 /* zip.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		191275344D9D7845D4FB890B50383061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMProgressHUD;
+			target = 7DB7AD7AC0F841263D2C85BA412A52A7 /* MMProgressHUD */;
+			targetProxy = EEDD941CD8D10443EB2BB476D72DB310 /* PBXContainerItemProxy */;
+		};
+		D9614257C9B4DC50F32C946DE8EE0E88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSZipArchive;
+			target = 5F6C934734E9A3C7FA348DA3DCDD348A /* SSZipArchive */;
+			targetProxy = 52B00F2E3E90802E711EA5911B819768 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0375F09498A465A445E504C2CB5CF048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29B0370E159F403BC582D87645EB6A7C /* Pods-RYFileDownLoader.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RYFileDownLoader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RYFileDownLoader/Pods-RYFileDownLoader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RYFileDownLoader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0739BCEB4495870A23A4D1D8668E2558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		187ED6F81BB1DB9DC59CE624A02FA3FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50991447A439AA5F82A58FA89050F6EA /* SSZipArchive-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SSZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		331BDFD796B1815AC08F022FFA7498F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3048F44917E3C64997E6DC5D16E6705 /* MMProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMProgressHUD/MMProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMProgressHUD/MMProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MMProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		379996E9E1C96DE22C7F711624257641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD308E45FAE9A0C887359B9B83CC0CF7 /* Pods-RYFileDownLoader.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RYFileDownLoader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RYFileDownLoader/Pods-RYFileDownLoader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RYFileDownLoader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9BB388E860276763BCBBF03BEE093A8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50991447A439AA5F82A58FA89050F6EA /* SSZipArchive-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SSZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A918C6B87DE2455E5BEB17FB621B1B29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AE81C90614B375D5A106E95F2D67CB9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3048F44917E3C64997E6DC5D16E6705 /* MMProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMProgressHUD/MMProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMProgressHUD/MMProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MMProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A918C6B87DE2455E5BEB17FB621B1B29 /* Debug */,
+				0739BCEB4495870A23A4D1D8668E2558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418E28A3A3C52CBD2C33D268DCBC8085 /* Build configuration list for PBXNativeTarget "MMProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				331BDFD796B1815AC08F022FFA7498F8 /* Debug */,
+				AE81C90614B375D5A106E95F2D67CB9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E8DA3FDD8DB764094AAD4915B15283C /* Build configuration list for PBXNativeTarget "SSZipArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB388E860276763BCBBF03BEE093A8F /* Debug */,
+				187ED6F81BB1DB9DC59CE624A02FA3FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8313AE90AAB4E0D5259BF5DA4E781C36 /* Build configuration list for PBXNativeTarget "Pods-RYFileDownLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0375F09498A465A445E504C2CB5CF048 /* Debug */,
+				379996E9E1C96DE22C7F711624257641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
