@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>RYFileDownLoader.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>98806EC01CCF0067003EE8FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>98806ED91CCF0067003EE8FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>98806EE41CCF0067003EE8FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
