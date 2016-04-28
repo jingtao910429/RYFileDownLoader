@@ -41,19 +41,24 @@
 
 //数据初始化
 - (void)initData {
-    
+    _Downloading = NO;
 }
 
 //开始下载
 - (void)startDownload {
+    
+    if (_Downloading) {
+        return;
+    }
     
     _Downloading = YES;
     
     self.credentialRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:self.remoteURL] cachePolicy:0 timeoutInterval:TimeOut];
     self.credentialRequest.HTTPMethod = @"GET";
      //iOS9.0方法更换
-    [NSURLConnection connectionWithRequest:self.credentialRequest delegate:self];
+    self.credentialConnection = [NSURLConnection connectionWithRequest:self.credentialRequest delegate:self];
     
+    __block FileDownLoader *weakSelf = self;
     [NSURLConnection sendAsynchronousRequest:self.credentialRequest queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         
         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
@@ -83,6 +88,8 @@
             [MMProgressHUD setPresentationStyle:MMProgressHUDPresentationStyleFade];
             [MMProgressHUD showDeterminateProgressWithTitle:@"正在更新资源文件" status:nil];
             
+            [NSURLConnection connectionWithRequest:weakSelf.credentialRequest delegate:weakSelf];
+            
         }
         
     }];
@@ -101,33 +108,39 @@
  */
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
+    if (self.credentialConnection == connection) {
+        return;
+    }
+    
     //判断是否是第一次连接
     if (self.sumLength) return;
     
     //1.创建文件存储路径
+    /*
     NSString *cachesPath = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
                             stringByAppendingPathComponent:ZipPath];
     NSString *filePath = [cachesPath stringByAppendingPathComponent:ZipName];
+    */
     
     //2.如果文件夹已存在，先删除再创建
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
-    if (![fileManager fileExistsAtPath:cachesPath]) {
-        [fileManager createDirectoryAtPath:cachesPath withIntermediateDirectories:YES attributes:nil error:nil];
+    if (![fileManager fileExistsAtPath:self.cachePath]) {
+        [fileManager createDirectoryAtPath:self.cachePath withIntermediateDirectories:YES attributes:nil error:nil];
     }
     
     //3.创建一个空的文件到沙盒中
-    if ([fileManager fileExistsAtPath:filePath]) {
-        [fileManager removeItemAtPath:filePath error:nil];
-        if (![fileManager fileExistsAtPath:filePath]) {
-            [fileManager createFileAtPath:filePath contents:nil attributes:nil];
+    if ([fileManager fileExistsAtPath:self.destinationPath]) {
+        [fileManager removeItemAtPath:self.destinationPath error:nil];
+        if (![fileManager fileExistsAtPath:self.destinationPath]) {
+            [fileManager createFileAtPath:self.destinationPath contents:nil attributes:nil];
         }
     }else {
-        [fileManager createFileAtPath:filePath contents:nil attributes:nil];
+        [fileManager createFileAtPath:self.destinationPath contents:nil attributes:nil];
     }
     
     //4.创建写数据的文件句柄
-    self.writeHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
+    self.writeHandle = [NSFileHandle fileHandleForWritingAtPath:self.destinationPath];
     
     //5.获取完整的文件长度
     self.sumLength = response.expectedContentLength;
@@ -138,6 +151,9 @@
  */
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
+    if (self.credentialConnection == connection) {
+        return;
+    }
     
     //累加接收到的数据长度
     self.currentLength += data.length;
@@ -160,6 +176,10 @@
  */
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
+    if (self.credentialConnection == connection) {
+        return;
+    }
+    
     //关闭连接，不再输入数据在文件中
     [self.writeHandle closeFile];
     self.writeHandle = nil;
@@ -167,6 +187,8 @@
     //清空进度值
     self.currentLength = 0;
     self.sumLength = 0;
+    
+    _Downloading = NO;
     
     if (self.completionHandler) {//下载完成通知控制器
         self.completionHandler();
@@ -178,6 +200,12 @@
  */
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
+    if (self.credentialConnection == connection) {
+        return;
+    }
+    
+    _Downloading = NO;
+    
     if (self.failureHandler) {//通知控制器，下载出错
         self.failureHandler(error);
     }
@@ -205,10 +233,9 @@ didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
             SecTrustRef trust = challenge.protectionSpace.serverTrust;
             NSURLCredential *credential = [NSURLCredential credentialForTrust:trust];
             [challenge.sender useCredential:credential forAuthenticationChallenge:challenge];
+            //[challenge.sender continueWithoutCredentialForAuthenticationChallenge:challenge];
         }
     }
-    
-    [challenge.sender continueWithoutCredentialForAuthenticationChallenge:challenge];
 }
 
 

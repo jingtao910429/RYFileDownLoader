@@ -33,6 +33,9 @@ typedef void (^FailureHandler)(NSError *error);
 //StorePath To DownLoad
 @property (nonatomic, copy) NSString *destinationPath;
 
+//CachePath To DownLoad
+@property (nonatomic, copy) NSString *cachePath;
+
 //Whether it is being downloaded
 @property (nonatomic, readonly, getter = isDownloading) BOOL Downloading;
 

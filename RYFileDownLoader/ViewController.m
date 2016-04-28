@@ -65,6 +65,7 @@
         }
         
         _fileDownLoader.destinationPath = filePath;
+        _fileDownLoader.cachePath       = cachesPath;
         
         _fileDownLoader.progressHandler = ^(double progress) {
             [MMProgressHUD updateProgress:progress];
